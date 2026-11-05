@@ -1,0 +1,4 @@
+feature_set,n_features,accuracy,f1,roc_auc,fpr,heldout_wordlist_dga_detect@0.5,heldout_pronounceable_dga_detect@0.5
+all features,13,0.982250,0.982321,0.998835,0.021750,0.202000,0.781500
+structural only (no n-gram),10,0.907125,0.904853,0.967692,0.069000,0.146500,0.005000
+n-gram only,3,0.949500,0.950442,0.979048,0.069500,0.089500,0.652000
