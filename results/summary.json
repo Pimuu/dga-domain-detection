@@ -1,0 +1,210 @@
+{
+  "seed": 42,
+  "n_per_class": 20000,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "n_train": 32000,
+  "n_test": 8000,
+  "n_heldout": 4000,
+  "heldout_families": [
+    "wordlist_dga",
+    "pronounceable_dga"
+  ],
+  "selected_model": "Gradient Boosting",
+  "test_metrics": {
+    "Entropy baseline": {
+      "accuracy": 0.729125,
+      "precision": 0.725129,
+      "recall": 0.738,
+      "f1": 0.731508,
+      "roc_auc": 0.800808,
+      "fpr": 0.27975,
+      "tn": 2881,
+      "fp": 1119,
+      "fn": 1048,
+      "tp": 2952,
+      "tpr_at_fpr_1pct_test": 0.3555,
+      "tpr_at_fpr_0.1pct_test": 0.21375,
+      "thr_cv_fpr_1pct": 0.771356,
+      "recall_at_cv_thr": 0.3835,
+      "fpr_at_cv_thr": 0.01275,
+      "fit_seconds": 0.774058,
+      "us_per_domain": 28.352815
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9735,
+      "precision": 0.966043,
+      "recall": 0.9815,
+      "f1": 0.97371,
+      "roc_auc": 0.996979,
+      "fpr": 0.0345,
+      "tn": 3862,
+      "fp": 138,
+      "fn": 74,
+      "tp": 3926,
+      "tpr_at_fpr_1pct_test": 0.94,
+      "tpr_at_fpr_0.1pct_test": 0.84675,
+      "thr_cv_fpr_1pct": 0.959402,
+      "recall_at_cv_thr": 0.92725,
+      "fpr_at_cv_thr": 0.007,
+      "fit_seconds": 0.889098,
+      "us_per_domain": 23.493618
+    },
+    "Random Forest": {
+      "accuracy": 0.98225,
+      "precision": 0.978423,
+      "recall": 0.98625,
+      "f1": 0.982321,
+      "roc_auc": 0.998835,
+      "fpr": 0.02175,
+      "tn": 3913,
+      "fp": 87,
+      "fn": 55,
+      "tp": 3945,
+      "tpr_at_fpr_1pct_test": 0.9605,
+      "tpr_at_fpr_0.1pct_test": 0.92375,
+      "thr_cv_fpr_1pct": 0.876348,
+      "recall_at_cv_thr": 0.9595,
+      "fpr_at_cv_thr": 0.00975,
+      "fit_seconds": 2.137765,
+      "us_per_domain": 34.449506
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.982,
+      "precision": 0.97558,
+      "recall": 0.98875,
+      "f1": 0.982121,
+      "roc_auc": 0.999008,
+      "fpr": 0.02475,
+      "tn": 3901,
+      "fp": 99,
+      "fn": 45,
+      "tp": 3955,
+      "tpr_at_fpr_1pct_test": 0.966,
+      "tpr_at_fpr_0.1pct_test": 0.93375,
+      "thr_cv_fpr_1pct": 0.965264,
+      "recall_at_cv_thr": 0.96275,
+      "fpr_at_cv_thr": 0.00825,
+      "fit_seconds": 1.199177,
+      "us_per_domain": 23.669352
+    }
+  },
+  "family_detection": [
+    {
+      "model": "Gradient Boosting",
+      "family": "alnum_random",
+      "n": 667,
+      "flagged@0.5": 1.0,
+      "flagged@FPR1%": 0.998501,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "conficker_like",
+      "n": 666,
+      "flagged@0.5": 0.995495,
+      "flagged@FPR1%": 0.986486,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "cryptolocker_like",
+      "n": 667,
+      "flagged@0.5": 1.0,
+      "flagged@FPR1%": 0.998501,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "hex_hash",
+      "n": 666,
+      "flagged@0.5": 1.0,
+      "flagged@FPR1%": 1.0,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "legit",
+      "n": 4000,
+      "flagged@0.5": 0.02475,
+      "flagged@FPR1%": 0.00825,
+      "split": "test-benign"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "short_random",
+      "n": 667,
+      "flagged@0.5": 0.937031,
+      "flagged@FPR1%": 0.793103,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "uniform_long",
+      "n": 667,
+      "flagged@0.5": 1.0,
+      "flagged@FPR1%": 1.0,
+      "split": "test"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "pronounceable_dga",
+      "n": 2000,
+      "flagged@0.5": 0.8825,
+      "flagged@FPR1%": 0.7015,
+      "split": "held-out"
+    },
+    {
+      "model": "Gradient Boosting",
+      "family": "wordlist_dga",
+      "n": 2000,
+      "flagged@0.5": 0.3325,
+      "flagged@FPR1%": 0.1725,
+      "split": "held-out"
+    }
+  ],
+  "ablation": [
+    {
+      "feature_set": "all features",
+      "n_features": 13,
+      "accuracy": 0.98225,
+      "f1": 0.982321,
+      "roc_auc": 0.998835,
+      "fpr": 0.02175,
+      "heldout_wordlist_dga_detect@0.5": 0.202,
+      "heldout_pronounceable_dga_detect@0.5": 0.7815
+    },
+    {
+      "feature_set": "structural only (no n-gram)",
+      "n_features": 10,
+      "accuracy": 0.907125,
+      "f1": 0.904853,
+      "roc_auc": 0.967692,
+      "fpr": 0.069,
+      "heldout_wordlist_dga_detect@0.5": 0.1465,
+      "heldout_pronounceable_dga_detect@0.5": 0.005
+    },
+    {
+      "feature_set": "n-gram only",
+      "n_features": 3,
+      "accuracy": 0.9495,
+      "f1": 0.950442,
+      "roc_auc": 0.979048,
+      "fpr": 0.0695,
+      "heldout_wordlist_dga_detect@0.5": 0.0895,
+      "heldout_pronounceable_dga_detect@0.5": 0.652
+    }
+  ],
+  "entropy_median": {
+    "legit": 2.75,
+    "dga": 3.3515253532523603
+  },
+  "runtime_seconds": 48.9,
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}

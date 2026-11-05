@@ -1,0 +1,14 @@
+feature,std_coefficient
+trigram_logprob,-5.759950
+length,-3.289851
+consonant_run_frac,-2.628736
+bigram_logprob,-0.986471
+unique_char_ratio,-0.877984
+digit_ratio,-0.747976
+hyphen_count,-0.683823
+vowel_consonant_ratio,-0.489228
+vowel_ratio,0.342751
+max_digit_run,0.829754
+rare_bigram_frac,1.200480
+entropy,2.055456
+max_consonant_run,6.031809

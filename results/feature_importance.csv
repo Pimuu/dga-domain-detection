@@ -1,0 +1,14 @@
+feature,impurity_importance,perm_importance_mean,perm_importance_std
+trigram_logprob,0.350571,0.220125,0.007316
+bigram_logprob,0.277533,0.008185,0.000684
+length,0.102090,0.004029,0.000146
+entropy,0.069947,0.001191,0.000072
+max_consonant_run,0.087119,0.000982,0.000198
+rare_bigram_frac,0.030451,0.000724,0.000067
+consonant_run_frac,0.015153,0.000392,0.000041
+digit_ratio,0.007197,0.000240,0.000041
+hyphen_count,0.000862,0.000232,0.000016
+max_digit_run,0.005660,0.000202,0.000036
+vowel_ratio,0.032651,0.000171,0.000064
+vowel_consonant_ratio,0.012790,0.000112,0.000051
+unique_char_ratio,0.007976,0.000104,0.000032

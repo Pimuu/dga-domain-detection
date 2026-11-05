@@ -1,0 +1,10 @@
+model,family,n,flagged@0.5,flagged@FPR1%,split
+Gradient Boosting,alnum_random,667,1.000000,0.998501,test
+Gradient Boosting,conficker_like,666,0.995495,0.986486,test
+Gradient Boosting,cryptolocker_like,667,1.000000,0.998501,test
+Gradient Boosting,hex_hash,666,1.000000,1.000000,test
+Gradient Boosting,legit,4000,0.024750,0.008250,test-benign
+Gradient Boosting,short_random,667,0.937031,0.793103,test
+Gradient Boosting,uniform_long,667,1.000000,1.000000,test
+Gradient Boosting,pronounceable_dga,2000,0.882500,0.701500,held-out
+Gradient Boosting,wordlist_dga,2000,0.332500,0.172500,held-out
